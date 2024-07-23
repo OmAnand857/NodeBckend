@@ -10,7 +10,6 @@ let memoryArray = [];
 app.post('/form',(req,res)=>{
     const formData = req.body;
     memoryArray.push(formData);
-    console.log(memoryArray[0]);
     res.render('success.ejs',{
         name : formData.name,
         email: formData.email,
